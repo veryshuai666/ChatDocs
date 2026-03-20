@@ -1,0 +1,36 @@
+# 站点基础信息
+site_name: ChatDocs
+site_url: https://veryshuai666.github.io/ChatDocs/
+site_description: 开发文档
+site_author: misery
+
+# 主题配置（mkdocs-material，和Drogon文档风格匹配）
+theme:
+  name: material
+  language: zh  # 默认语言
+  features:
+    - navigation.tabs  # 顶部标签（如Drogon的中英切换）
+    - navigation.sections  # 侧边导航折叠（Drogon文档的层级导航）
+    - toc.integrate  # 页面内锚点目录和侧边导航整合
+    - code.highlight  # 代码高亮（Drogon文档的代码块效果）
+  palette:
+    - scheme: default  # 浅色主题
+      primary: blue    # 主色调（匹配Drogon的蓝色）
+
+# 页面内锚点配置（和Drogon的?id=xxx一致，标题自动生成锚点）
+markdown_extensions:
+  - toc:
+      permalink: true  # 锚点链接显示（点击标题复制锚点）
+      slugify: !!python/name:markdown.extensions.toc.slugify  # 锚点命名规则
+  - codehilite:  # 代码高亮
+      guess_lang: false
+  - admonition  # 提示框（可选）
+
+# 侧边导航配置（和Drogon的层级导航一致，按你的MD文档路径配置）
+nav:
+  - 首页: index.md
+  - 开发文档:
+      - RefreshToken模式-规划: 开发文档/基于jwt -cpp 实现 Refresh token模式.md
+      - RefreshToken模式-实现: 开发文档/Refresh token模式的实现.md
+      - 消息处理机制: 开发文档/消息转发分类和投递策略.md
+      - Websocket Connection断连机制-规划:  开发文档/Websocket 连接过期和回收机制.md
