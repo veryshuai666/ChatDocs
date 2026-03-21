@@ -26,11 +26,14 @@ markdown_extensions:
       guess_lang: false
   - admonition  # 提示框（可选）
 
-# 侧边导航配置（和Drogon的层级导航一致，按你的MD文档路径配置）
+
 nav:
-  - 首页: index.md
-  - 开发文档:
-      - RefreshToken模式-规划: 开发文档/基于jwt -cpp 实现 Refresh token模式.md
-      - RefreshToken模式-实现: 开发文档/Refresh token模式的实现.md
-      - 消息处理机制: 开发文档/消息转发分类和投递策略.md
-      - Websocket Connection断连机制-规划:  开发文档/Websocket 连接过期和回收机制.md
+  - 🏠 首页: index.md
+  - 🔐 认证授权:               # 大版块1（可折叠，对应Drogon的数据库）
+      - RefreshToken 模式规划: Refresh token模式/基于jwt -cpp 实现 Refresh token模式.md
+      - RefreshToken 代码实现: Refresh token模式/Refresh token模式的实现.md
+  - 🌐 WebSocket通信:          # 大版块2
+      - 连接断连与回收机制 规划: WebSocket连接管理/Websocket 连接过期和回收机制.md
+      - 连接断连与回收机制 实现: WebSocket连接管理/Websocket连接过期机制实现.md
+  - 📨 消息处理系统:           # 大版块3
+      - 转发分类与投递策略: 消息处理/消息转发分类和投递策略.md
