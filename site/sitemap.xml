@@ -2,22 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://veryshuai666.github.io/ChatDocs/</loc>
-         <lastmod>2026-03-20</lastmod>
+         <lastmod>2026-03-21</lastmod>
     </url>
     <url>
-         <loc>https://veryshuai666.github.io/ChatDocs/%E5%BC%80%E5%8F%91%E6%96%87%E6%A1%A3/Refresh%20token%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%AE%9E%E7%8E%B0/</loc>
-         <lastmod>2026-03-20</lastmod>
+         <loc>https://veryshuai666.github.io/ChatDocs/Refresh%20token%E6%A8%A1%E5%BC%8F/Refresh%20token%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%AE%9E%E7%8E%B0/</loc>
+         <lastmod>2026-03-21</lastmod>
     </url>
     <url>
-         <loc>https://veryshuai666.github.io/ChatDocs/%E5%BC%80%E5%8F%91%E6%96%87%E6%A1%A3/Websocket%20%E8%BF%9E%E6%8E%A5%E8%BF%87%E6%9C%9F%E5%92%8C%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6/</loc>
-         <lastmod>2026-03-20</lastmod>
+         <loc>https://veryshuai666.github.io/ChatDocs/Refresh%20token%E6%A8%A1%E5%BC%8F/%E5%9F%BA%E4%BA%8Ejwt%20-cpp%20%E5%AE%9E%E7%8E%B0%20Refresh%20token%E6%A8%A1%E5%BC%8F/</loc>
+         <lastmod>2026-03-21</lastmod>
     </url>
     <url>
-         <loc>https://veryshuai666.github.io/ChatDocs/%E5%BC%80%E5%8F%91%E6%96%87%E6%A1%A3/%E5%9F%BA%E4%BA%8Ejwt%20-cpp%20%E5%AE%9E%E7%8E%B0%20Refresh%20token%E6%A8%A1%E5%BC%8F/</loc>
-         <lastmod>2026-03-20</lastmod>
+         <loc>https://veryshuai666.github.io/ChatDocs/Websocket%E8%BF%9E%E6%8E%A5%E7%AE%A1%E7%90%86/Websocket%20%E8%BF%9E%E6%8E%A5%E8%BF%87%E6%9C%9F%E5%92%8C%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6/</loc>
+         <lastmod>2026-03-21</lastmod>
     </url>
     <url>
-         <loc>https://veryshuai666.github.io/ChatDocs/%E5%BC%80%E5%8F%91%E6%96%87%E6%A1%A3/%E6%B6%88%E6%81%AF%E8%BD%AC%E5%8F%91%E5%88%86%E7%B1%BB%E5%92%8C%E6%8A%95%E9%80%92%E7%AD%96%E7%95%A5/</loc>
-         <lastmod>2026-03-20</lastmod>
+         <loc>https://veryshuai666.github.io/ChatDocs/Websocket%E8%BF%9E%E6%8E%A5%E7%AE%A1%E7%90%86/Websocket%E8%BF%9E%E6%8E%A5%E8%BF%87%E6%9C%9F%E6%9C%BA%E5%88%B6%E5%AE%9E%E7%8E%B0/</loc>
+         <lastmod>2026-03-21</lastmod>
+    </url>
+    <url>
+         <loc>https://veryshuai666.github.io/ChatDocs/%E6%B6%88%E6%81%AF%E5%A4%84%E7%90%86/%E6%B6%88%E6%81%AF%E8%BD%AC%E5%8F%91%E5%88%86%E7%B1%BB%E5%92%8C%E6%8A%95%E9%80%92%E7%AD%96%E7%95%A5/</loc>
+         <lastmod>2026-03-21</lastmod>
     </url>
 </urlset>

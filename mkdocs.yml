@@ -33,7 +33,7 @@ nav:
       - RefreshToken 模式规划: Refresh token模式/基于jwt -cpp 实现 Refresh token模式.md
       - RefreshToken 代码实现: Refresh token模式/Refresh token模式的实现.md
   - 🌐 WebSocket通信:          # 大版块2
-      - 连接断连与回收机制 规划: WebSocket连接管理/Websocket 连接过期和回收机制.md
-      - 连接断连与回收机制 实现: WebSocket连接管理/Websocket连接过期机制实现.md
+      - 连接断连与回收机制 规划: Websocket连接管理/Websocket 连接过期和回收机制.md
+      - 连接断连与回收机制 实现: Websocket连接管理/Websocket连接过期机制实现.md
   - 📨 消息处理系统:           # 大版块3
       - 转发分类与投递策略: 消息处理/消息转发分类和投递策略.md

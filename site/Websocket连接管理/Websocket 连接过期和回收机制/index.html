@@ -12,13 +12,13 @@
         <meta name="author" content="misery">
       
       
-        <link rel="canonical" href="https://veryshuai666.github.io/ChatDocs/%E5%BC%80%E5%8F%91%E6%96%87%E6%A1%A3/%E6%B6%88%E6%81%AF%E8%BD%AC%E5%8F%91%E5%88%86%E7%B1%BB%E5%92%8C%E6%8A%95%E9%80%92%E7%AD%96%E7%95%A5/">
+        <link rel="canonical" href="https://veryshuai666.github.io/ChatDocs/Websocket%E8%BF%9E%E6%8E%A5%E7%AE%A1%E7%90%86/Websocket%20%E8%BF%9E%E6%8E%A5%E8%BF%87%E6%9C%9F%E5%92%8C%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6/">
       
       
-        <link rel="prev" href="../Refresh%20token%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%AE%9E%E7%8E%B0/">
+        <link rel="prev" href="../../Refresh%20token%E6%A8%A1%E5%BC%8F/Refresh%20token%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%AE%9E%E7%8E%B0/">
       
       
-        <link rel="next" href="../Websocket%20%E8%BF%9E%E6%8E%A5%E8%BF%87%E6%9C%9F%E5%92%8C%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6/">
+        <link rel="next" href="../Websocket%E8%BF%9E%E6%8E%A5%E8%BF%87%E6%9C%9F%E6%9C%BA%E5%88%B6%E5%AE%9E%E7%8E%B0/">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>消息处理机制 - ChatDocs</title>
+        <title>连接断连与回收机制 规划 - ChatDocs</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#websocket" class="md-skip">
           跳转至
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              消息处理机制
+              连接断连与回收机制 规划
             
           </span>
         </div>
@@ -205,10 +205,30 @@
   
     
   
-  首页
+  🏠 首页
 
       </a>
     </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../Refresh%20token%E6%A8%A1%E5%BC%8F/%E5%9F%BA%E4%BA%8Ejwt%20-cpp%20%E5%AE%9E%E7%8E%B0%20Refresh%20token%E6%A8%A1%E5%BC%8F/" class="md-tabs__link">
+          
+  
+  
+  🔐 认证授权
+
+        </a>
+      </li>
+    
   
 
       
@@ -222,11 +242,31 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../%E5%9F%BA%E4%BA%8Ejwt%20-cpp%20%E5%AE%9E%E7%8E%B0%20Refresh%20token%E6%A8%A1%E5%BC%8F/" class="md-tabs__link">
+        <a href="./" class="md-tabs__link">
           
   
   
-  开发文档
+  🌐 WebSocket通信
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../%E6%B6%88%E6%81%AF%E5%A4%84%E7%90%86/%E6%B6%88%E6%81%AF%E8%BD%AC%E5%8F%91%E5%88%86%E7%B1%BB%E5%92%8C%E6%8A%95%E9%80%92%E7%AD%96%E7%95%A5/" class="md-tabs__link">
+          
+  
+  
+  📨 消息处理系统
 
         </a>
       </li>
@@ -283,7 +323,7 @@
   <span class="md-ellipsis">
     
   
-    首页
+    🏠 首页
   
 
     
@@ -292,6 +332,121 @@
   
 
       </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔐 认证授权
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    🔐 认证授权
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Refresh%20token%E6%A8%A1%E5%BC%8F/%E5%9F%BA%E4%BA%8Ejwt%20-cpp%20%E5%AE%9E%E7%8E%B0%20Refresh%20token%E6%A8%A1%E5%BC%8F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RefreshToken 模式规划
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Refresh%20token%E6%A8%A1%E5%BC%8F/Refresh%20token%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%AE%9E%E7%8E%B0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RefreshToken 代码实现
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -321,17 +476,17 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
   <span class="md-ellipsis">
     
   
-    开发文档
+    🌐 WebSocket通信
   
 
     
@@ -342,72 +497,16 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
   
-    开发文档
+    🌐 WebSocket通信
   
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%E5%9F%BA%E4%BA%8Ejwt%20-cpp%20%E5%AE%9E%E7%8E%B0%20Refresh%20token%E6%A8%A1%E5%BC%8F/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    RefreshToken模式-规划
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Refresh%20token%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%AE%9E%E7%8E%B0/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    RefreshToken模式-实现
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
             
               
                 
@@ -432,7 +531,7 @@
   <span class="md-ellipsis">
     
   
-    消息处理机制
+    连接断连与回收机制 规划
   
 
     
@@ -450,7 +549,7 @@
   <span class="md-ellipsis">
     
   
-    消息处理机制
+    连接断连与回收机制 规划
   
 
     
@@ -476,10 +575,21 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        问题：
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        
+        规划：
       
     </span>
   </a>
@@ -490,40 +600,7 @@
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        设计思路
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        准备工作：创建辅助工具
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        消息转发的核心逻辑
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        
+        方案确定：
       
     </span>
   </a>
@@ -546,14 +623,101 @@
   
   
     <li class="md-nav__item">
-      <a href="../Websocket%20%E8%BF%9E%E6%8E%A5%E8%BF%87%E6%9C%9F%E5%92%8C%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6/" class="md-nav__link">
+      <a href="../Websocket%E8%BF%9E%E6%8E%A5%E8%BF%87%E6%9C%9F%E6%9C%BA%E5%88%B6%E5%AE%9E%E7%8E%B0/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Websocket Connection断连机制-规划
+    连接断连与回收机制 实现
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📨 消息处理系统
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    📨 消息处理系统
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%B6%88%E6%81%AF%E5%A4%84%E7%90%86/%E6%B6%88%E6%81%AF%E8%BD%AC%E5%8F%91%E5%88%86%E7%B1%BB%E5%92%8C%E6%8A%95%E9%80%92%E7%AD%96%E7%95%A5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    转发分类与投递策略
   
 
     
@@ -591,76 +755,24 @@
 
 
 
-<h1 id="_1">消息转发分类和投递策略<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<h2 id="_2"><a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<h2 id="_3">设计思路<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<p>通讯应用中非常重要的特性就是消息的实时性，用户在线时能不能快速地收到其他人的消息，能不能及时收到通知。还有离线消息补发：用户离线时错过了哪些最新消息？重连时能不能快速获取到这些消息；以及消息存储的可靠性，出于意外或者设备的变更，以往的消息能不能完整地保存不丢失？
-这里涉及到的有 消息实时通知，热点消息缓存，消息的持久化，这三者在时间跨度上逐步增长，实时通知如果离线就失效，热点消息缓存在用户离线很久之后也会丢失，消息的持久化则是基本上永久地保存了消息
-我们可以根据消息的重要性选择不同的策略：时效性很短的消息选择在线则实时通知，离线则丢弃。时效性适中的选择在线则实时通知，离线则加入缓存队列，重要的消息则是一定要持久化到数据库，在线的话就通知</p>
-<p>同时发送消息的用户需要得到响应：消息发送是否成功，没有成功的话错误或者异常的内容是什么</p>
-<p>所以需要有一个统一的信息封装，要有转发策略，要兼容不同的信息内容，以及如果投入离线队列的话，对应的离线队列是哪一个。信息封装后经过connection service统一处理转发，得到响应后通知用户</p>
-<h2 id="_4">准备工作：创建辅助工具<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<p>目前消息分类：通知，用户聊天消息</p>
-<p>消息转发策略：1.仅在线投递，离线丢弃；2.优先在线投递，不在线则存储；3.必须送达</p>
-<p>目前1和3效果一样，3留作后面做更严格的扩展</p>
-<p>消息投递结果：1.送达  2.投入离线队列  3.丢弃</p>
-<p>定义枚举</p>
-<div class="codehilite"><pre><span></span><code><span class="k">enum</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">DeliveryPolicy</span>
-<span class="p">{</span>
-<span class="w">    </span><span class="n">OnlineOnly</span><span class="p">,</span>
-<span class="w">    </span><span class="n">PreferOnline</span><span class="p">,</span>
-<span class="w">    </span><span class="n">MustDeliver</span>
-<span class="p">};</span>
-
-<span class="k">enum</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">OfflineChannel</span>
-<span class="p">{</span>
-<span class="w">    </span><span class="n">Message</span><span class="p">,</span>
-<span class="w">    </span><span class="n">Notice</span>
-<span class="p">};</span>
-
-<span class="k">enum</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">DeliveryState</span>
-<span class="p">{</span>
-<span class="w">    </span><span class="n">Sent</span><span class="p">,</span>
-<span class="w">    </span><span class="n">Queued</span><span class="p">,</span>
-<span class="w">    </span><span class="n">Dropped</span>
-<span class="p">};</span>
-</code></pre></div>
-
-<p>定义一个包装消息的类 envelope</p>
-<div class="codehilite"><pre><span></span><code><span class="k">struct</span><span class="w"> </span><span class="nc">OutBoundMessage</span>
-<span class="p">{</span>
-<span class="w">    </span><span class="n">DeliveryPolicy</span><span class="w"> </span><span class="n">policy</span><span class="p">;</span>
-<span class="w">    </span><span class="n">OfflineChannel</span><span class="w"> </span><span class="n">channel</span><span class="p">;</span>
-<span class="w">    </span><span class="n">OutboundPayload</span><span class="w"> </span><span class="n">payload</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div>
-
-<p>其中</p>
-<div class="codehilite"><pre><span></span><code><span class="k">using</span><span class="w"> </span><span class="n">OutboundPayload</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">variant</span><span class="o">&lt;</span><span class="n">ChatMessage</span><span class="p">,</span><span class="w"> </span><span class="n">Notice</span><span class="p">,</span><span class="w"> </span><span class="n">Json</span><span class="o">::</span><span class="n">Value</span><span class="o">&gt;</span><span class="p">;</span>
-</code></pre></div>
-
-<p>消息类型可以是聊天消息，通知消息，以及序列化的json，为了后面方便做扩展，我们用std::variant封装信息的payload，后面有新的类型的数据，只要再写一个DTO类加入就行。目前这个序列化的json主要是传递一些调试信息和报错</p>
-<h2 id="_5">消息转发的核心逻辑<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
-<p>对于目前的几种消息，我们采用优先在线通知，离线放入缓存，数据库持久化兜底的机制，保证消息的实时性和可靠性。</p>
-<p>实时消息通过用户的连接connection来进行发送，所以消息转发的逻辑主要在connection service中。Connection Service会根据消息的转发策略进行不同的处理，所以对应的，转发的结果也有多种：</p>
-<p>我们定义一个转发结果类 DeliverResult，以便把转发的失败和转发异常区分开</p>
-<div class="codehilite"><pre><span></span><code><span class="k">struct</span><span class="w"> </span><span class="nc">DeliveryResult</span>
-<span class="p">{</span>
-<span class="w">    </span><span class="n">DeliveryState</span><span class="w"> </span><span class="n">state</span><span class="p">{</span><span class="n">DeliveryState</span><span class="o">::</span><span class="n">Dropped</span><span class="p">};</span>
-<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">reason</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div>
-
-<p>核心转发接口是这样的：</p>
-<div class="codehilite"><pre><span></span><code><span class="n">DeliveryResult</span><span class="w"> </span><span class="nf">DeliverMessage</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span><span class="w"> </span><span class="n">recipient</span><span class="p">,</span>
-<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">OutboundMessage</span><span class="o">&amp;</span><span class="w"> </span><span class="n">msg</span><span class="p">);</span>
-</code></pre></div>
-
-<p>这里分发的逻辑是，先看msg的policy：</p>
-<p>OnlineOnly：用户在线时实时推送。如果连接池中没有对应用户连接，说明用户不在线，不转发，不入缓存队列，不持久化。设置返回结果的状态是dropped</p>
-<p>PreferOnline和MustDeliver：有连接时实时发送，同时存储到数据库中；没连接时要加入缓存中并持久化到数据库</p>
-<p>后面可以延伸更多分发逻辑，但基本就是这三种操作的排列组合：是否实时转发？是否入缓存队列？是否持久化？</p>
-<h2 id="_6"><a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<h1 id="websocket">Websocket 连接过期和回收机制<a class="headerlink" href="#websocket" title="Permanent link">&para;</a></h1>
+<h2 id="_1">问题：<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>目前websocket接口连接成功后，除非用户重复登录（同个用户多个连接接入）否则服务器不会主动断开连接，这就导致可能连接时使用的token过期很久了，还是一直保持接入,所以应该有一个机制，在用户使用websocket的功能时检查连接的有效性，过期则断连</p>
+<h2 id="_2">规划：<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>检查机制接入点的选择：</p>
+<ol>
+<li>
+<p>用户每次使用ws/chat路由（发送ai请求或者聊天消息）时，检查用户连接是否过期</p>
+</li>
+<li>
+<p>用户连接在线且收到任意消息时（系统通知，好友申请通知，用户聊天）</p>
+</li>
+</ol>
+<h2 id="_3">方案确定：<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>消息有 收---发 这两个环节，上面规划讨论的接入点选择，1是“发”，2则是“收”。websocket connection的获取来自于websocket 路由的连接；而我们增加的机制本质上是要检查websocket连接是否合法，连接是否依旧持有合法的token。所以可以将检查操作放在每次使用websocket 路由时，而这样的操作场景目前只有发送用户消息和ai聊天，属于“发”这一环节，这么做之后，我们可以确保“发”时，用户连接基本是合法的
+但是，如果只在“发”添加检查，那么如果遇到一段时间内只收不发的连接，这个机制在这个时间内就失效了。比如token有效期为5分钟，而用户在30分钟内都可能只收不发。可是在每次收到消息都要做一次检查，无疑是一种很影响性能的做法</p>
+<p>我们可以换一种思路，既然在只收不发这个情况下，，token过期了无法自动回收，但是又没法设置一个比较好的检查点，那我们就帮它定期回收。这里很容易想到用定时器去解决这个问题，把过期时间和断连回调注册到定时器里面，时间一到，定时器就会帮我们直接断开连接</p>
+<p>最终确定方案：1.在发消息的环节会检查连接是否过期 2.注册一个定时器实现兜底机制，定期回收连接</p>
 
 
 
