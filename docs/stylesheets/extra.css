@@ -1,0 +1,34 @@
+/* 侧边导航：版块标题加粗、加色，与子项明显区分 */
+.md-nav--primary .md-nav__item--section > .md-nav__link {
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: #1565C0;
+  letter-spacing: 0.03em;
+  text-transform: none;
+  padding-top: 0.6rem;
+  padding-bottom: 0.2rem;
+}
+
+/* 版块标题左侧加竖线装饰 */
+.md-nav--primary .md-nav__item--section > .md-nav__link::before {
+  content: "";
+  display: inline-block;
+  width: 3px;
+  height: 0.9em;
+  background: #1565C0;
+  border-radius: 2px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+/* 子项正常字重、略小字号，与版块标题拉开对比 */
+.md-nav--primary .md-nav__item--section .md-nav__item > .md-nav__link {
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: #37474F;
+}
+
+/* 子项悬停 */
+.md-nav--primary .md-nav__item--section .md-nav__item > .md-nav__link:hover {
+  color: #1976D2;
+}

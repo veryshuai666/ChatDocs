@@ -1,39 +1,43 @@
-# 站点基础信息
+﻿# 站点基础信息
 site_name: ChatDocs
 site_url: https://veryshuai666.github.io/ChatDocs/
 site_description: 开发文档
 site_author: misery
 
-# 主题配置（mkdocs-material，和Drogon文档风格匹配）
+# 主题配置
 theme:
   name: material
-  language: zh  # 默认语言
+  language: zh
   features:
-    - navigation.tabs  # 顶部标签（如Drogon的中英切换）
-    - navigation.sections  # 侧边导航折叠（Drogon文档的层级导航）
-    - toc.integrate  # 页面内锚点目录和侧边导航整合
-    - code.highlight  # 代码高亮（Drogon文档的代码块效果）
+    - navigation.sections
+    - navigation.expand
+    - toc.integrate
+    - code.highlight
   palette:
-    - scheme: default  # 浅色主题
-      primary: blue    # 主色调（匹配Drogon的蓝色）
+    - scheme: default
+      primary: blue
 
-# 页面内锚点配置（和Drogon的?id=xxx一致，标题自动生成锚点）
+extra_css:
+  - stylesheets/extra.css
+
 markdown_extensions:
   - toc:
-      permalink: true  # 锚点链接显示（点击标题复制锚点）
-      slugify: !!python/name:markdown.extensions.toc.slugify  # 锚点命名规则
-  - codehilite:  # 代码高亮
+      permalink: true
+      slugify: !!python/name:markdown.extensions.toc.slugify
+  - codehilite:
       guess_lang: false
-  - admonition  # 提示框（可选）
+  - admonition
 
 
 nav:
   - 🏠 首页: index.md
-  - 🔐 认证授权:               # 大版块1（可折叠，对应Drogon的数据库）
+  - 📋 接口文档:
+      - 接口文档: 接口文档/接口文档.md
+  - 🔐 认证授权:
       - RefreshToken 模式规划: Refresh token模式/基于jwt -cpp 实现 Refresh token模式.md
       - RefreshToken 代码实现: Refresh token模式/Refresh token模式的实现.md
-  - 🌐 WebSocket通信:          # 大版块2
+  - 🌐 WebSocket通信:
       - 连接断连与回收机制 规划: Websocket连接管理/Websocket 连接过期和回收机制.md
       - 连接断连与回收机制 实现: Websocket连接管理/Websocket连接过期机制实现.md
-  - 📨 消息处理系统:           # 大版块3
+  - 📨 消息处理系统:
       - 转发分类与投递策略: 消息处理/消息转发分类和投递策略.md
